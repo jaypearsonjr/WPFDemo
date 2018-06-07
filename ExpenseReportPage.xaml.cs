@@ -24,5 +24,12 @@ namespace ExpenseIt
         {
             InitializeComponent();
         }
+        // Custom constructor to pass expense report data
+        // Benifit of this() constructor: allow use of object type and reduce duplicate code
+        public ExpenseReportPage(object data) : this()
+        {
+            // Bind to expense report data.
+            this.DataContext = data;
+        }
     }
 }
