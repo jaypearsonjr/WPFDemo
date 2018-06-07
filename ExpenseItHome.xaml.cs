@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ExpenseIt.DataSources.Contexts;
+using ExpenseIt.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,36 @@ namespace ExpenseIt
         public ExpenseItHome()
         {
             InitializeComponent();
+        }
+
+        public int CreateNewExpense(Expense e)
+        {
+            using (var db = new FinancialContext())
+            {
+                int result = 0;
+                string type = "placeholder",
+                       amount = "placeholder";
+
+                type = e.ExpenseType;
+                amount = e.ExpenseAmount;
+
+                var expense = new Expense { ExpenseType = type, ExpenseAmount = amount };
+                db.Expenses.Add(expense);
+
+                result = db.SaveChanges();
+
+                if (false)
+                {
+                   //handle unexpected result
+
+                }
+                else
+                {
+
+                    return result;
+                }
+
+            }
         }
 
         private void Button_Click_ViewReport(object sender, RoutedEventArgs e)

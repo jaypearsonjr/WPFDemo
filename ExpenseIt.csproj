@@ -61,6 +61,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controller\ExpenseReportController.cs" />
+    <Compile Include="DataSources\Contexts\FinancialContext.cs" />
     <Compile Include="Model\Expense.cs" />
     <Compile Include="Model\People.cs" />
     <Compile Include="ViewModel\ExpenseReport.cs" />
@@ -118,7 +120,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\Backgrounds\watermark.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
