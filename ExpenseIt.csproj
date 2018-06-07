@@ -61,10 +61,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Controller\ExpenseReportController.cs" />
+    <Compile Include="Controller\ExpenseController.cs" />
+    <Compile Include="Controller\PeopleController.cs" />
     <Compile Include="DataSources\Contexts\FinancialContext.cs" />
     <Compile Include="Model\Expense.cs" />
-    <Compile Include="Model\People.cs" />
+    <Compile Include="Model\Person.cs" />
     <Compile Include="ViewModel\ExpenseReport.cs" />
     <Compile Include="Views\TempPage.xaml.cs">
       <DependentUpon>TempPage.xaml</DependentUpon>

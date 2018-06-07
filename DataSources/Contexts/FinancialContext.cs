@@ -11,6 +11,6 @@ namespace ExpenseIt.DataSources.Contexts
     class FinancialContext : DbContext
     {
         public DbSet<Expense> Expenses { get; set; }
-        public DbSet<People> Persons { get; set; }
+        public DbSet<Person> Persons { get; set; }
     }
 }

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ExpenseIt.Model
 {
-    class People
+    class Person
     {
         public int Id { get; set; }
 
         public string Name { get; set; }
         public string Department { get; set; }
 
-        public virtual List<People> Persons { get; set; }
+        public virtual List<Person> People { get; set; }
     }
 }
