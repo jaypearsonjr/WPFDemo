@@ -10,7 +10,7 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Backgrounds\watermark.png" />
+            <ImageBrush ImageSource="Assets\Backgrounds\watermark.png" />
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="230" />

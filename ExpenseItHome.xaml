@@ -64,7 +64,7 @@
         <Button  Grid.Column="1" Grid.Row="3" Click ="Button_Click_ViewReport" Style="{StaticResource buttonStyle}">View</Button>
 
         <Grid.Background>
-            <ImageBrush ImageSource="Backgrounds\watermark.png"/>
+            <ImageBrush ImageSource="Assets\Backgrounds\watermark.png"/>
         </Grid.Background>
     </Grid>
 </Page>
