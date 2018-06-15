@@ -32,5 +32,12 @@ namespace ExpenseIt
             // Bind to expense report data.
             this.DataContext = data;
         }
+
+        private void Button_Click_ViewDetails(object sender, RoutedEventArgs e)
+        {
+            // View Expense Report
+            TempPage tempPage = new TempPage();
+            this.NavigationService.Navigate(tempPage);
+        }
     }
 }
